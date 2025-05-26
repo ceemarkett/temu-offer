@@ -27,6 +27,8 @@
       flex-direction: column;
       justify-content: center;
       align-items: center;
+      position: relative;
+      padding-bottom: 3rem; /* space for footer */
     }
     .logo-wrapper {
       position: relative;
@@ -85,6 +87,20 @@
     .social-icons a:hover {
       transform: scale(1.2);
     }
+    .footer {
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+      background: rgba(255, 255, 255, 0.8);
+      color: #333;
+      text-align: center;
+      padding: 0.5rem 0;
+      font-size: 0.9rem;
+      font-weight: 600;
+      box-shadow: 0 -1px 5px rgba(0,0,0,0.1);
+      backdrop-filter: blur(5px);
+      z-index: 1000;
+    }
     @keyframes fadeIn {
       from { opacity: 0; transform: translateY(20px); }
       to { opacity: 1; transform: translateY(0); }
@@ -93,7 +109,7 @@
 </head>
 <body>
   <div class="logo-wrapper">
-    <img src="https://seeklogo.com/images/T/temu-logo-4A4CBEBCC3-seeklogo.com.png" alt="Temu Logo" class="logo">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/9/9a/Temu_logo.svg" alt="Temu Logo" class="logo">
     <i class="fas fa-check-circle verified-check" title="Verified"></i>
   </div>
 
@@ -107,5 +123,9 @@
     <a href="https://facebook.com/ceemarkett" target="_blank" aria-label="Facebook" rel="noopener noreferrer"><i class="fab fa-facebook"></i></a>
     <a href="https://youtube.com/@ceemarkett" target="_blank" aria-label="YouTube" rel="noopener noreferrer"><i class="fab fa-youtube"></i></a>
   </div>
+
+  <footer class="footer">
+    ©2025 Ceemarkett | All rights reserved
+  </footer>
 </body>
-</html> 
+</html>
