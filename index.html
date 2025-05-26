@@ -7,7 +7,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
 
-  <!-- Updated Font Awesome CDN -->
+  <!-- Font Awesome CDN -->
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet" />
 
   <style>
@@ -28,10 +28,26 @@
       justify-content: center;
       align-items: center;
     }
-    .logo {
-      width: 120px;
+    .logo-wrapper {
+      position: relative;
+      display: inline-block;
       margin-bottom: 20px;
       animation: fadeIn 1s ease-out;
+    }
+    .logo {
+      width: 120px;
+      display: block;
+    }
+    .verified-check {
+      position: absolute;
+      bottom: 5px;
+      right: 5px;
+      color: #1DA1F2;  /* Verified blue */
+      background: white;
+      border-radius: 50%;
+      font-size: 18px;
+      box-shadow: 0 0 5px rgba(0,0,0,0.2);
+      pointer-events: none;
     }
     h1 {
       font-size: 1.8rem;
@@ -76,16 +92,20 @@
   </style>
 </head>
 <body>
-  <img src="https://seeklogo.com/images/T/temu-logo-4A4CBEBCC3-seeklogo.com.png" alt="Temu Logo" class="logo">
+  <div class="logo-wrapper">
+    <img src="https://seeklogo.com/images/T/temu-logo-4A4CBEBCC3-seeklogo.com.png" alt="Temu Logo" class="logo">
+    <i class="fas fa-check-circle verified-check" title="Verified"></i>
+  </div>
+
   <h1>Tap below to unlock free offers</h1>
-  <a href="https://singingfiles.com/show.php?l=0&u=2396508&id=67722" class="cta-button" target="_blank">
+  <a href="https://singingfiles.com/show.php?l=0&u=2396508&id=67722" class="cta-button" target="_blank" rel="noopener noreferrer">
     Unlock Free Offers
   </a>
   <div class="social-icons">
-    <a href="https://instagram.com/ceemarkett" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
-    <a href="https://tiktok.com/@ceemarkett" target="_blank" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
-    <a href="https://facebook.com/ceemarkett" target="_blank" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
-    <a href="https://youtube.com/@ceemarkett" target="_blank" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+    <a href="https://instagram.com/ceemarkett" target="_blank" aria-label="Instagram" rel="noopener noreferrer"><i class="fab fa-instagram"></i></a>
+    <a href="https://tiktok.com/@ceemarkett" target="_blank" aria-label="TikTok" rel="noopener noreferrer"><i class="fab fa-tiktok"></i></a>
+    <a href="https://facebook.com/ceemarkett" target="_blank" aria-label="Facebook" rel="noopener noreferrer"><i class="fab fa-facebook"></i></a>
+    <a href="https://youtube.com/@ceemarkett" target="_blank" aria-label="YouTube" rel="noopener noreferrer"><i class="fab fa-youtube"></i></a>
   </div>
 </body>
-</html>
+</html> 
